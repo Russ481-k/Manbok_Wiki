@@ -1,0 +1,376 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #000000;
+  --Primary-color:#93CEE3;
+  --onPrimary-color:#013542;
+  --Primary-Container-color:#0ca9cc;
+  --onPrimary-Container-color:#AFEBFF;
+  --Secondary-color:#BBC9CD;
+  --onSecondary-color:#253236;
+  --Secondary-Container-color:#3C494D;
+  --onSecondary-Container-color:#D7E5E9;
+  --grey-dark-color: #6d7477;
+  --grey-light-color: #efefef;
+
+  /* Size */
+  --padding: 10px;
+  --avatar-size:48px;
+
+  /* Font Size */
+  --font-large: 24px;
+  --font-midium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+.header{
+  align-items: center;
+  justify-content: center;
+  height: 340px;
+  white-space:nowrap;
+  overflow: hidden;
+}
+.header a{
+  font-size: 120px;
+  margin: 0;
+  text-decoration: none;
+  color: var(--Primary-Container-color);
+}
+.header a h2{
+  margin: 0;
+}
+form{
+  margin: auto;
+  width: 100%;
+  background-color: var(--grey-light-color);
+}
+.input_title{
+  width: 88%;
+  padding: 1%;
+  height: 30px;
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
+  transition: 0.5s;
+  filter: brightness(0.9);
+  font-size: 30px;
+}
+.input_title:hover{
+  filter: brightness(0.8);
+}
+.input_title:focus{
+  filter: brightness(1);
+}
+.main textarea{
+  width: 88%;
+  padding: 1%;
+  height: 200px;
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
+  transition: 0.5s;
+  filter: brightness(0.9);
+  font-size: 20px;
+
+}
+.main textarea:hover{
+  filter: brightness(0.8);
+}
+.main textarea:focus{
+  filter: brightness(1);
+}
+form h1{
+  padding: 20px 0 0 0;
+  margin: 0px;
+  color: var(--Primary-Container-color);
+}
+form h2{
+  text-align: left;
+  margin: 20px 0 0 5%;
+  color: var(--white-color);
+}
+.wiki_update_input_title{
+  align-items:center;
+  padding: 5px 1%;
+  width: 98%;
+  height: 40px;
+  border: 0px solid var(--Primary-Container-color);
+  border-radius: 10px;
+  transition: 0.5s;
+  filter: brightness(0.9);
+  font-size: 30px;
+
+}
+.wiki_update_input_title:hover{
+  filter: brightness(0.8);
+}
+.wiki_update_input_title:focus{
+  filter: brightness(1);
+}
+.wiki_update_input_contents{
+  padding: 1%;
+  width: 98%;
+  height: 700px;
+  border: 0px solid var(--Primary-Container-color);
+  border-radius: 10px;
+  transition: 0.5s;
+  filter: brightness(0.9);
+  font-size: 20px;
+
+}
+.wiki_update_input_contents:hover{
+  filter: brightness(0.8);
+}
+.wiki_update_input_contents:focus{
+  filter: brightness(1);
+}
+.submit_button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 50px;
+  border: 1px solid var(--Primary-Container-color);
+  border-radius: 10px;
+  background-color: var(--Primary-Container-color);
+  font-size: 42px;
+  color: var(--white-color);
+  transition: 0.5s;
+  filter: brightness(0.9);
+
+}
+.submit_button:hover{
+  filter: brightness(0.8);
+}
+.submit_button:focus{
+  filter: brightness(1);
+}
+.submit_button:active{
+  filter: brightness(0.7);
+}
+.submit_button:visited{
+  filter: brightness(0.9);
+}
+.pagi_button{
+  font-size: 24px;
+  border: 0px;
+  background-color: var(--Primary-Container-color);
+  color: var(--white-color);
+  border-radius: 20px;
+  transition: 0.8s;
+}
+.pagi_button:hover{
+  color: var(--grey-dark-color);
+  background-color: var(--onPrimary-Container-color);
+
+  border-radius: 5px;
+
+}
+.pagi_button:disabled{
+  color: var(--grey-dark-color);
+  background-color: var(--onPrimary-Container-color);
+
+  border-radius: 0px;
+
+}
+.post{
+  transition: 0.5s;
+}
+.post_up{
+  text-align: center;;
+  margin: auto;
+  width: 100%;
+  height: 20px;
+  border: 0px;
+  background-color: var(--Primary-Container-color);
+  filter: brightness(0.9);
+  transition: 0.8s;
+  color: var(--white-color);
+
+}
+.pagi_button_wrapper{
+  text-align: center;;
+  margin: auto;
+  width: 100%;
+  height: 30px;
+  border: 0px;
+  background-color: var(--Primary-Container-color);
+  filter: brightness(0.9);
+  transition: 0.8s;
+}
+.pagi_button_wrapper:hover, .post_up:hover{
+  filter: brightness(1);
+
+}
+.post_slide{
+  margin: auto;
+  margin-top: 0.5%;
+  width: 92%;
+  display: flex;
+
+}
+.post_component{
+  width: 15.8%;
+  height: 420px;
+  margin: 1%;
+  padding: 1%;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid var(--grey-light-color);
+  transition: 0.7s;
+  background-color: #f0efef;
+}
+.post_component .title{
+  white-space: no-wrap;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+}
+.post_component .contents{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 18;
+  overflow: hidden;
+}
+.post_component:hover{
+  transform: scale(1.05);
+  border: 1px solid var(--Primary-Container-color);
+  background-color: var(--white-color);
+
+}
+.post_component div h2{
+  color: var(--Primary-Container-color);
+  height: 40px;
+}
+.post_component div h4{
+  color: var(--grey-dark-color);
+}
+
+.wiki_body{
+  display: flex;
+  height: auto;
+}
+.sidebar{
+  margin: 0 2% 0 0;
+  padding: 10px;
+  width: 15%;
+  box-shadow: 20px 0px 20px -20px lightgray;
+}
+
+.sidebar h4, .sidebar a{
+  text-decoration: none;
+  color:#909da0;
+  margin: 1%;
+  padding: 3%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.sidebar h4:hover{
+  background-color: var(--grey-light-color);
+
+}
+.sidebar a:hover{
+  color:#1296b3;
+}
+.wiki_container{
+  margin: 1%;
+  padding: 1%;
+  width: 80%;
+  min-height: 820px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.wiki_update_button_out{
+  width: 72px;
+  display: flex;
+  position: absolute;
+  top: 530px;
+  right: 30px;
+}
+.wiki_update_button_out button{
+  margin-left: 3px;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.5s;
+}
+.wiki_update_button_out button:hover{
+  color: var(--Primary-Container-color);
+
+}
+.wiki_update_button_blank{
+  background-color: white;
+}
+
+.wiki_container h1, .wiki_container h2{
+  color: #1187a2;
+}
+.wiki_container a{
+  text-decoration: none;
+  color:darkcyan;
+  transition: 0.7s;
+
+}
+.wiki_update{
+  text-align: left;
+  margin: 10px 0 5px 0;
+}
+.wiki_update h1{
+  margin: 20px 0 10px 0;
+  text-align: center;;
+  font-size: 50px;
+}
+.wiki_container a:hover{
+  color:rgb(0, 182, 182);
+}
+.wiki_update_button{
+  width: 200px;
+  display: flex;
+  position: absolute;
+  top: 530px;
+  right: 30px;
+}
+.wiki_update_button button{
+  margin-left: 3px;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.5s;
+}
+.wiki_update_button button:hover{
+  color: var(--Primary-Container-color);
+
+}
+.wiki_update_button_blank{
+  background-color: white;
+}
+.pagi{
+  height: 540px;
+}
+
+.top_button:hover{
+  background-color: var(--onPrimary-Container-color);
+}
+.img{
+  height: 120px;
+  top: 0;
+
+  /* overflow: hidden; */
+}
+.img img{
+  height: 1920px;
+  transform: rotate(90deg) translateY(-1300%);
+  z-index: 9999;
+}
+.footer{
+  height: 130px;
+
+  background-image: url("https://i.pinimg.com/564x/44/6f/f7/446ff775dd443627ee1b7dec1815ef5b.jpg");
+}
+
